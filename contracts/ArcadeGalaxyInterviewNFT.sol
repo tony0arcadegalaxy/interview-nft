@@ -27,8 +27,6 @@ contract ArcadeGalaxyInterviewNFT is
     
     string public __baseURI;
 
-    Counters.Counter public tokenIDCounter;
-
     uint _mintingPrice;
 
     constructor(
@@ -80,7 +78,6 @@ contract ArcadeGalaxyInterviewNFT is
 
     function _mint(uint256 tokenID, address tokenOwner) private {
         _safeMint(tokenOwner, tokenID);
-        tokenIDCounter.increment();
     }
 
     function supportsInterface(
