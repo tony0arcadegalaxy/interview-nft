@@ -7,3 +7,8 @@ typechain
 #Hardhat files
 cache
 artifacts
+
+#Vim temp files
+*~
+*.swp
+*.swo
